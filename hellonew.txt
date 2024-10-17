@@ -1,2 +1,0 @@
-This is a text file created using terminal.
-this is a file that was copied using the "cp" command.
