@@ -36,10 +36,31 @@ public class Mug {
         int drained = this.fillLevel -ounces;
         return drained;
     }
+    /*
+     * accesors
+     */
+    public int getSize(){
+        return this.size;
+    }
+    public int getFillLevel(){
+        return this.fillLevel;
+    }
+    public String getPhrase(){
+        return this.phrase;
+    }
+    public String getColor(){
+        return this.color;
+    }
+    /*
+     * Mutators
+     */
+    public void setPhrase(String phrase){
+        this.phrase = phrase;
+    }
     public static void main(String[] args){
         Mug mug1 = new Mug(8, "red", "I miss JuiceWrld");
         System.out.println("Mug1 Attributes:"+ mug1.color+
-        " "+ mug1.fillLevel+ " "+mug1.size+" "+ mug1.phrase);
+        " "+ mug1.getFillLevel()+ " "+mug1.getSize()+" "+ mug1.getPhrase());
         mug1.fill(12);
         System.out.println(mug1.fillLevel);
         mug1.drain(3);
