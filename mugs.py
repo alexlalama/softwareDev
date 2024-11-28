@@ -25,7 +25,9 @@ class Mug:
     '''
     mutators
     '''
-
+    def set_phrase(self, __phrase):
+        self__phrase = __phrase
+        return self__phrase
 
     '''
     fill method adds an amount of ounces to the fill level
@@ -69,5 +71,6 @@ def main():
     print(mug2.get_fill_level())
     mug2.drain(2)
     print(mug2.get_fill_level())
+    print(mug1.get_phrase() , "is set to the new phrase of ",mug1.set_phrase("I poop"))
 if __name__ == "__main__":
     main()
