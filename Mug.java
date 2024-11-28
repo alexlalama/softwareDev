@@ -1,9 +1,9 @@
 public class Mug {
     // Attributes
-    int size;
-    String color;
-    int fillLevel;
-    String phrase;
+    private int size;
+    private String color;
+    private int fillLevel;
+    private String phrase;
 
     public Mug(int size, String color, String phrase){
         this.size = size;
