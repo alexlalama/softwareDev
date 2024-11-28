@@ -10,7 +10,23 @@ class Mug:
         self.__color = color
         self.__fill_level = 0
         self.__phrase = phrase
-    
+
+    '''
+    accessor
+    '''
+    def get_size(self):
+        return self.__size
+    def get_color(self):
+        return self.__color
+    def get_fill_level(self):
+        return self.__fill_level        
+    def get_phrase(self):
+        return self.__phrase
+    '''
+    mutators
+    '''
+
+
     '''
     fill method adds an amount of ounces to the fill level
         if filled over the size level returns the size
@@ -34,6 +50,7 @@ class Mug:
         drained = self.__fill_level- ounces
         return drained
 
+   
 '''
 main function
 '''
@@ -41,16 +58,16 @@ def main():
     mug1 = Mug(8, "red", "I miss JuiceWrld")
     mug2 = Mug(12, "gray", "I miss school")
     #Mug1: 8 red I miss JuiceWrld
-    print("Mug1: ",mug1.size,mug1.color, mug1.fill_level ,mug1.phrase)
+    print("Mug1: ",mug1.get_size(),mug1.get_color(), mug1.get_fill_level() ,mug1.get_phrase())
     #Mug2: 12 gray I miss school
-    print("Mug2",mug2.__size,mug2.__color, mug2.__fill_level ,mug2.__phrase)
+    print("Mug2",mug2.get_size(),mug2.get_color(), mug2.get_fill_level() ,mug2.get_phrase())
     mug1.fill(12)
-    print(mug1.__fill_level)
+    print(mug1.get_fill_level())
     mug1.drain(3)
-    print(mug1.__fill_level)
+    print(mug1.get_fill_level())
     mug2.fill(7)
-    print(mug2.__fill_level)
+    print(mug2.get_fill_level())
     mug2.drain(2)
-    print(mug2.__fill_level)
+    print(mug2.get_fill_level())
 if __name__ == "__main__":
     main()
