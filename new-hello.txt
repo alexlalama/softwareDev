@@ -1,3 +1,0 @@
-new hello.txt file created with 'cp' (copy) command
-renamed with new-hello.txt 
-this is a file.
