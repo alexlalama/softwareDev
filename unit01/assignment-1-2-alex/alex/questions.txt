@@ -1,1 +1,4 @@
 #3 alex lalama
+
+#9 found out that 'git status' does not track new empty repos. the repo could be tracked when i moved a file into the repo. there are (1) questions.txt file present in the 'softwaredev' repo.
+
