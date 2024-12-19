@@ -1,3 +1,7 @@
+"""
+Asks users for their name, birth month, birth day
+birth year and prints to standard output
+"""
 def bday_message():
     name = input("Enter your name: ")
     birth_month = input("Enter your birth month: ")
