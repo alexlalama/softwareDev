@@ -27,5 +27,23 @@ def expressions_practice():
     print(floor_division_eq)
     print(mod_eq)
     print(pemdas)
-variable_practice()
-expressions_practice()
+
+def prompt_and_print():
+    """
+    Prompts a user for (2) numeric values 
+    Prints the result of addition, subtraction, 
+    multiplication, and division of the two numbers
+    """
+    num1= input("Enter a numeric value: ")
+    num2= input("Enter a numeric value: ")
+    addition = num1 + num2
+    print(num1, "+",num2, "=", addition)
+    subtracting = num1-num2
+    print(num1, " - ",num2, "=",subtracting)
+    multiplying = num1 * num2
+    print(num1, "*",num2, "=",multiplying)
+    division = num1 / num2
+    print(num1, "/",num2, "=", division)
+# variable_practice()
+# expressions_practice()
+prompt_and_print()
