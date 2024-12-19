@@ -18,5 +18,9 @@ def hello_you():
     name = input("Enter your name: ") #prompts the user for their name
     print("Hello, ", name, "!", sep="") #prints Hello, name!
 
-hello_world() #call to a function
-hello_you()
+
+def main():
+    hello_world() #call to a function
+    hello_you()
+
+main()
