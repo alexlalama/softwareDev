@@ -44,6 +44,9 @@ def prompt_and_print():
     print(num1, " - ",num2, "=",subtracting)
     print(num1, "*",num2, "=",multiplying)
     print(num1, "/",num2, "=", division)
-# variable_practice()
-# expressions_practice()
-prompt_and_print()
+
+def main():
+    # variable_practice()
+    # expressions_practice()
+    prompt_and_print()
+main()
