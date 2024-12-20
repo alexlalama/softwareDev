@@ -7,7 +7,6 @@ def test_drive():
     turtle.forward(100)
     turtle.left(90)
     turtle.forward(100)
-    turtle.left(90)
     turtle.forward(100)
     turtle.left(90)
     turtle.forward(120)
@@ -20,13 +19,25 @@ def turtle_state():
     if turtle.isdown():
         return True
     else:
-        return False, turtle.heading(), turtle.heading(), turtle.xcor(), turtle.ycor()
+        return False, turtle.heading(), turtle.xcor(), turtle.ycor()
 
 
-
+def square():
+    turtle.pendown()
+    turtle.forward(100)
+    turtle.left(90)
+    turtle.forward(100)
+    turtle.left(90)
+    turtle.forward(100)
+    turtle.left(90)
+    turtle.forward(100)
+    turtle.penup()
 def main():
+    # print(turtle_state())
+    # test_drive()
+    # print(turtle_state())
     print(turtle_state())
-    test_drive()
+    square()
     print(turtle_state())
     input("Press enter to continue... ")
     
