@@ -1,5 +1,5 @@
 import turtle
-
+angle = 45
 def test_drive():
     turtle.pendown()
     turtle.forward(100)
@@ -23,6 +23,7 @@ def turtle_state():
 
 
 def square(size):
+    turtle.left(angle)
     turtle.pendown()
     turtle.forward(size)
     turtle.left(90)
@@ -32,6 +33,7 @@ def square(size):
     turtle.left(90)
     turtle.forward(size)
     turtle.left(90)
+    turtle.right(45)
     turtle.penup()
 def main():
     # print(turtle_state())
