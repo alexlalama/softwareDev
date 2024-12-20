@@ -22,23 +22,31 @@ def turtle_state():
         return False, turtle.heading(), turtle.xcor(), turtle.ycor()
 
 
-def square():
+def square(size):
     turtle.pendown()
-    turtle.forward(100)
+    turtle.forward(size)
     turtle.left(90)
-    turtle.forward(100)
+    turtle.forward(size)
     turtle.left(90)
-    turtle.forward(100)
+    turtle.forward(size)
     turtle.left(90)
-    turtle.forward(100)
+    turtle.forward(size)
+    turtle.left(90)
     turtle.penup()
 def main():
     # print(turtle_state())
     # test_drive()
     # print(turtle_state())
     print(turtle_state())
-    square()
+    square(50)
     print(turtle_state())
+    print(turtle_state())
+    square(100)
+    print(turtle_state())
+    print(turtle_state())
+    square(150)
+    print(turtle_state())
+   
     input("Press enter to continue... ")
     
 main()
