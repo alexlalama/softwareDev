@@ -22,7 +22,7 @@ def turtle_state():
         return False, turtle.heading(), turtle.xcor(), turtle.ycor()
 
 
-def square(size):
+def square(size, angle):
     turtle.left(angle)
     turtle.pendown()
     turtle.forward(size)
@@ -40,13 +40,13 @@ def main():
     # test_drive()
     # print(turtle_state())
     print(turtle_state())
-    square(50)
+    square(50,95)
     print(turtle_state())
     print(turtle_state())
-    square(100)
+    square(100, 100)
     print(turtle_state())
     print(turtle_state())
-    square(150)
+    square(150, 105)
     print(turtle_state())
    
     input("Press enter to continue... ")
