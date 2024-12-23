@@ -33,7 +33,7 @@ def draw_centered_circle(radius,fillcolor):
     turtle.left(180)
 
 def draw_smiley():
-    draw_centered_circle(150, "gray")
+    draw_centered_circle(150, "yellow")
     draw_centered_circle( 20, "pink")
 
 def tweak(speed,tracer):
@@ -47,10 +47,10 @@ def draw_eye(x, y, radius, iris_color):
     draw_circle(x, y*2,radius/4, "black")
 
 def main():
-    # turtle.speed(10)
-    # draw_smiley()
+    turtle.speed(10)
+    draw_smiley()
     draw_eye(60, 30, 40, "brown")
-    
+    draw_eye(-60, 30, 40, "brown")
     input("Press enter to continue")
 
 main()
