@@ -32,10 +32,11 @@ def draw_centered_circle(radius,fillcolor):
     turtle.forward(radius)
     turtle.left(180)
 
-def draw_smiley():
-    draw_centered_circle(150, "yellow")
-    draw_centered_circle(20, "pink")
-
+def draw_smiley(x,y, radius, head_fill_color, nose_fill_color):
+    draw_centered_circle(radius, head_fill_color)
+    draw_centered_circle(radius*.25, nose_fill_color)
+    draw_eye(radius*.35, radius*.25,radius*.25,"brown")
+    draw_eye(-1*(radius*.35), radius*.25,radius*.25,"brown")
 def tweak(speed,tracer):
     turtle.speed(speed)
     turtle.tracer(tracer)
@@ -46,7 +47,8 @@ def draw_eye(x, y, radius, iris_color):
     draw_circle(x, y*2,radius/4, "black")
 
 def draw_mouth(x, y, radius, fill_color):
-    turtle.goto(x,y)
+    turtle.goto(x, (.25*y-(radius*.6)))
+    turtle.forward(radius)
     turtle.left(90)
     turtle.begin_fill()
     turtle.pendown()
@@ -57,11 +59,10 @@ def draw_mouth(x, y, radius, fill_color):
     turtle.penup()
     turtle.end_fill()
 def main():
-    turtle.speed(10)
-    draw_smiley()
-    draw_eye(60, 30, 40, "brown")
-    draw_eye(-60, 30, 40, "brown")
-    draw_mouth(40,-60, 40, "black")
+    turtle.tracer(False)
+    draw_smiley(0,0, 150, "yellow", "pink")
+    turtle.speed(3)
+    draw_mouth(0, 0, 80, "black")
     input("Press enter to continue")
 
 main()
