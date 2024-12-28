@@ -36,9 +36,11 @@ def random_move():
     """
     Moves the turtle to a random location and orientation on the screen.
     """
-    turtle.goto(random.randint(-1000 ,1000), random.randint(-1000 ,1000)) 
+    turtle.goto(random.randint(-200, 200), random.randint(-200, 200)) 
 
     angle = random.randint(0, 360)
+    turtle.left(angle)
+
 
 '''
 Syntax Error
@@ -80,28 +82,33 @@ def draw_star(length):
     turtle.right(108)
 
     turtle.end_fill()    
-
+def random_star(length):
+    '''
+    Draws a star at a random location, orientation, and length 
+    '''
+    random_move()
+    draw_star(length)
 def main():
     """
     Should ultimately draw a night sky filled with stars and planets.
     """
     turtle.bgcolor("black")
-    tweak(True, 1)
+    tweak(1, True)
     '''
     Type Error
     Missing a cast from string to int
     VS code showed me the error
     '''
-    length = int(input("Enter length of star to draw (e.g. 100): "))
-    draw_star(length)
-    tweak(True, 1)
+    length = int(input("Enter length of star to draw between 5 - 10: "))
+    # draw_star(length)
+    tweak(1, True)
     '''
     Runtime Error or Attribute Error
     Changed Tracer to false to hide turtle
     VS tracedback the error
 
     ''' 
-    turtle.tracer(False)
+    random_star(length)
     input("Press enter to continue...")
 
 main()
