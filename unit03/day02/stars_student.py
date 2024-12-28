@@ -1,7 +1,7 @@
 """
 Draws a sky filled with stars and planets.
 
-@author
+@Alex Lalama
 """
 
 import random
@@ -37,12 +37,22 @@ def random_move():
     Moves the turtle to a random location and orientation on the screen.
     """
     x = random.randint(-1000, 1000)
-    y = random.randint(-1000 1000)
+    '''
+    Syntax Error
+    Missing a comma
+    The parameters for a randint is (a, b), VS Code showed a syntax error
+    '''
+    y = random.randint(-1000 ,1000)
     turtle.goto(x, x) 
 
     angle = random.randint(0, 360)
 
-def draw_star(length)
+'''
+Syntax Error
+Missing ':' after function definition
+VS showed the error
+'''
+def draw_star(length):
     """
     Draws a star at the turtle's current location and orientation.
     """
@@ -84,10 +94,21 @@ def main():
     """
     turtle.bgcolor("black")
     tweak(True, 1)
-    length = input("Enter length of star to draw (e.g. 100): ")
+    '''
+    Type Error
+    Missing a cast from string to int
+    VS code showed me the error
+    '''
+    length = int(input("Enter length of star to draw (e.g. 100): "))
     draw_star(length)
     tweak(True, 1)
-    turtle.hide()
+    '''
+    Runtime Error or Attribute Error
+    Changed Tracer to false to hide turtle
+    VS tracedback the error
+
+    ''' 
+    turtle.tracer(False)
     input("Press enter to continue...")
 
 main()
