@@ -81,6 +81,7 @@ def draw_star(length):
     turtle.forward(length)
     turtle.right(108)
 
+    turtle.penup()
     turtle.end_fill()    
 def random_star(length):
     '''
@@ -88,6 +89,26 @@ def random_star(length):
     '''
     random_move()
     draw_star(length)
+
+def draw_world(x, y, radius, fill_color):
+    '''
+    Draws a world
+    '''
+    turtle.goto(x, y)
+    turtle.fillcolor(fill_color)
+    turtle.begin_fill()
+    
+    turtle.forward(radius)
+    turtle.left(90)
+    turtle.pendown()
+    turtle.circle(radius)
+    turtle.penup()
+    turtle.left(90)
+    turtle.forward(radius)
+    turtle.left(180)
+    turtle.tracer(False)
+    turtle.penup()
+    turtle.end_fill()
 def main():
     """
     Should ultimately draw a night sky filled with stars and planets.
@@ -101,7 +122,7 @@ def main():
     '''
     length = int(input("Enter length of star to draw between 5 - 10: "))
     # draw_star(length)
-    tweak(1, True)
+    tweak(1, False)
     '''
     Runtime Error or Attribute Error
     Changed Tracer to false to hide turtle
@@ -109,6 +130,7 @@ def main():
 
     ''' 
     random_star(length)
+    draw_world(70, 20, 80, "blue")
     input("Press enter to continue...")
 
 main()
