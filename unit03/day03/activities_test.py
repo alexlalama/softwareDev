@@ -2,8 +2,8 @@ def square_area(length):
     '''
     
     '''
-    #value = length*length
-    return 64
+    value = length*length
+    return value
 
 def test_square_area_6():
      value = square_area(6)
