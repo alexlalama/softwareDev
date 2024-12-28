@@ -36,14 +36,7 @@ def random_move():
     """
     Moves the turtle to a random location and orientation on the screen.
     """
-    x = random.randint(-1000, 1000)
-    '''
-    Syntax Error
-    Missing a comma
-    The parameters for a randint is (a, b), VS Code showed a syntax error
-    '''
-    y = random.randint(-1000 ,1000)
-    turtle.goto(x, x) 
+    turtle.goto(random.randint(-1000 ,1000), random.randint(-1000 ,1000)) 
 
     angle = random.randint(0, 360)
 
