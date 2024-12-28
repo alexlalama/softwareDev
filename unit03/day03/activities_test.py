@@ -2,8 +2,8 @@ def square_area(length):
     '''
     
     '''
-    # if length < 0:
-    #     return None
+    if length < 0:
+        return None
     value = length*length
     return value
 
