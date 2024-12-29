@@ -6,6 +6,8 @@ def check_guess(answer, guess):
         return "Guess out of range"
     if guess < answer:
         return "Too low!"
+    if guess > answer:
+        return 0
 def test_check_guess_range_low():
     guess = check_guess(2, -1)
     assert guess == "Guess out of range"
@@ -17,5 +19,9 @@ def test_check_guess_range_high():
 def test_check_guess_too_low():
     guess = check_guess(2,1)
     assert guess == "Too low!"
+
+def test_check_guess_too_high():
+    guess = check_guess(4,9)
+    assert guess == "Too high!"
 
 # def test_check_guess_too_high()
