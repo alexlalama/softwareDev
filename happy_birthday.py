@@ -6,4 +6,6 @@ def bday_message():
     print(name, " your birthday is ",birth_month, birth_day,birth_year)
 def main():
     bday_message()
+    bday_message()
+    bday_message()
 main()
