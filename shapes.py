@@ -41,7 +41,7 @@ def area_iso_triangle():
     """
     side_length = int(input("Enter the side length: ")) 
     height = int(input("Enter the height: ")) 
-    area=0
+    area= side_length * height/2
     print("Square: side length = ", side_length, "height = ", height , " area = ", area)
 
 def area_equil_triangle():
@@ -66,5 +66,6 @@ def main():
     #volume_sphere()
     #area_equil_triangle()
     #area_square()
-    area_trapezoid()
+    area_iso_triangle()
+    #area_trapezoid()
 main()
