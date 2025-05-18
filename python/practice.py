@@ -1,3 +1,4 @@
+import turtle
 def convert_height():
     '''
     convert height from inch to feet and inches
@@ -7,7 +8,28 @@ def convert_height():
     inches = height%12
     print("You are ", feet ,"' ", inches," tall")
 
+
+def convert_distance(kilometers):
+    '''
+    
+    '''
+    miles = 0
+    feet = 0 
+    inches = 0
+    print(kilometers , " kilometers is " , miles , " miles" , feet, " feet, " , inches, " inches")
+
+def snow_man(x, y, radius):
+    
+    turtle.goto(-330, -280)
+    turtle.forward(280*2)
+    turtle.left(90)
+    turtle.forward(330*2)
+    turtle.left(90)
+    turtle.forward(280*2)
 def main():
-    convert_height()
+    x = 40
+    y = 80
+    radius = 30
+    snow_man(x, y, radius)
 
 main()
