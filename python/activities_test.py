@@ -1,6 +1,6 @@
 def square_area(length):
-    return 64
-
+    area = length * length
+    return area 
 
 def test_square_area_8():
     """
