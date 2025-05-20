@@ -16,3 +16,7 @@ def test_square_area_6():
     x = square_area(6)
     assert x == 36
 
+def test_square_area_negative():
+    # find area of negative square length
+    x= square_area(-6)
+    assert None
