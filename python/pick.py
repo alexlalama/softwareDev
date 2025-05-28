@@ -17,7 +17,10 @@ def test_check_guess_correct():
     
     #analyze
     assert check_guess(guess, answer) == 0 
-
+def test_check_guess_incorrect():
+    answer =2 
+    guess = 3
+    assert check_guess(guess, answer) == 0
 def main():
     '''answer = random.randint(1, 10)
     guess = int(input("Enter a random number 1 - 10"))
